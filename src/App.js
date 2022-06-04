@@ -13,6 +13,7 @@ import Card from "./components/Card";
 import ThemedComp from "./components/ThemedComp";
 import React from "react";
 import AnimationSpinner from "./components/AnimationSpinner";
+import Form from "./components/Form";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(true);
@@ -75,6 +76,8 @@ function App() {
         <DefaultButton large className="btn">
           I am a large button
         </DefaultButton>
+        <h2>Forms</h2>
+        <Form />
       </div>
     </ThemeProvider>
   );
