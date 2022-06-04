@@ -1,3 +1,4 @@
+import GlobalStyles from "./global-styles";
 import BasicTitle from "./components/BasicTitle";
 import { DefaultButton, HipsterButton } from "./components/Buttons";
 import MUIButtonExtended from "./components/MUIButtonExtended";
@@ -8,6 +9,7 @@ import Card from "./components/Card";
 function App() {
   return (
     <div>
+      <GlobalStyles />
       <BasicTitle>Basic</BasicTitle>
       <BasicTitle special>Special</BasicTitle>
       <BasicTitle destruct>Destruct</BasicTitle>
