@@ -2,6 +2,7 @@ import BasicTitle from "./components/BasicTitle";
 import { DefaultButton, HipsterButton } from "./components/Buttons";
 import MUIButtonExtended from "./components/MUIButtonExtended";
 import ComplexTitle from "./components/ComplexTitle";
+import ExtendingReactComponent from "./components/ExtendingReactComponent";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       </div>
       <h2 style={{ textAlign: "center" }}>More complex implementations</h2>
       <ComplexTitle title={"i am wrapped"} />
+      <ExtendingReactComponent title="Extending and utils constants" />
     </div>
   );
 }

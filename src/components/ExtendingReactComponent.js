@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../utils";
 
 const ExtendingReactComponent = (props) => {
   return (
@@ -14,12 +15,12 @@ const Wrapper = styled(ExtendingReactComponent)`
   h1 {
     text-transform: capitalize;
     text-align: center;
-    color: #126d64;
+    color: ${colors.secondaryC};
   }
   .underline {
     width: 5rem;
     height: 0.35rem;
-    background: #e72727c5;
+    background: ${colors.primaryC};
     margin: 0 auto;
   }
 `;
