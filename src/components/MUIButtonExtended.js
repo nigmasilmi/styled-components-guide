@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 const StyledButton = styled(Button)`
   text-transform: lowercase;
   margin: 1rem;
-  background-color: red;
+  background-color: var(--secondary);
   color: white;
   width: 30%;
   :hover {

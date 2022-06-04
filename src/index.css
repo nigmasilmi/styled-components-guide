@@ -1,3 +1,8 @@
+:root {
+  --primary: #f31f70;
+  --secondary: #0ca4db;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -20,7 +25,7 @@ code {
 .btn {
   display: block;
   text-align: center;
-  background-color: #645cff;
+  background-color: var(--primary);
   color: #fff;
   border: none;
   border-radius: 0.25rem;
@@ -37,5 +42,5 @@ code {
 
 .title {
   text-transform: uppercase;
-  color: red;
+  color: var(--secondary);
 }
