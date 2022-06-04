@@ -14,6 +14,7 @@ import ThemedComp from "./components/ThemedComp";
 import React from "react";
 import AnimationSpinner from "./components/AnimationSpinner";
 import Form from "./components/Form";
+import List from "./components/List";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(true);
@@ -78,6 +79,8 @@ function App() {
         </DefaultButton>
         <h2>Forms</h2>
         <Form />
+        <h2>Simple list example</h2>
+        <List />
       </div>
     </ThemeProvider>
   );
