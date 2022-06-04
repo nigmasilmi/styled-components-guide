@@ -30,3 +30,12 @@ code {
   width: 200px;
   margin: 1rem auto;
 }
+
+.bg-grey {
+  background: grey;
+}
+
+.title {
+  text-transform: uppercase;
+  color: red;
+}
