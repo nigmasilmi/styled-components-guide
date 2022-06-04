@@ -48,8 +48,12 @@ function App() {
         <button className="btn" onClick={switchThemeHandler}>
           Switch Theme
         </button>
-        <h2 style={{ textAlign: "center" }}>Animations: Spinner</h2>
+        <h2>Animations: Spinner</h2>
         <AnimationSpinner />
+        <h2>AS prop</h2>
+        <HipsterButton as="a" href="https://google.com">
+          I am a link
+        </HipsterButton>
       </div>
     </ThemeProvider>
   );

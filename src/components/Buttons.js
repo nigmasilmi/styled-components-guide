@@ -19,4 +19,7 @@ export const HipsterButton = styled(DefaultButton)`
   background: transparent;
   color: var(--primary);
   border: 1px solid var(--primary);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
 `;
