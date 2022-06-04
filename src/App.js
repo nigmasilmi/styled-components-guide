@@ -61,16 +61,20 @@ function App() {
             color: green;
           `}
         >
-          <h3>hello world</h3>
+          <h3>directly in the element props</h3>
           <BasicTitle
             vary
             css={`
               color: aqua;
             `}
           >
-            Style Component with macro
+            in styled components
           </BasicTitle>
         </div>
+        <h2>css helper function</h2>
+        <DefaultButton large className="btn">
+          I am a large button
+        </DefaultButton>
       </div>
     </ThemeProvider>
   );
