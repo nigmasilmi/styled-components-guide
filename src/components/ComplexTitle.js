@@ -15,6 +15,9 @@ const ComplexTitle = ({ title }) => {
 // checkout bg-grey (index.css) and background value
 // uncomment the selector .title to see another example
 const Wrapper = styled.div`
+  width: 70%;
+  padding: 0.5rem;
+  margin: 0 auto;
   h1 {
     text-transform: capitalize;
     text-align: center;

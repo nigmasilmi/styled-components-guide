@@ -3,6 +3,8 @@ import { DefaultButton, HipsterButton } from "./components/Buttons";
 import MUIButtonExtended from "./components/MUIButtonExtended";
 import ComplexTitle from "./components/ComplexTitle";
 import ExtendingReactComponent from "./components/ExtendingReactComponent";
+import Card from "./components/Card";
+
 function App() {
   return (
     <div>
@@ -18,6 +20,8 @@ function App() {
       <h2 style={{ textAlign: "center" }}>More complex implementations</h2>
       <ComplexTitle title={"i am wrapped"} />
       <ExtendingReactComponent title="Extending and utils constants" />
+      <h2 className="title">Making a card</h2>
+      <Card />
     </div>
   );
 }
