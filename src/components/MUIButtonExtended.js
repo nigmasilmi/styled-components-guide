@@ -8,7 +8,7 @@ const StyledButton = styled(Button)`
   margin: 1rem;
   background-color: var(--secondary);
   color: white;
-  width: 30%;
+  width: 60%;
   :hover {
     background-color: yellow;
   }
@@ -16,9 +16,7 @@ const StyledButton = styled(Button)`
 
 const MUIButtonExtended = () => {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
+    <div>
       <Button variant="contained">Plain MUI</Button>
       <StyledButton>Styled MUI Button</StyledButton>
     </div>

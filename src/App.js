@@ -11,6 +11,7 @@ import ExtendingReactComponent from "./components/ExtendingReactComponent";
 import Card from "./components/Card";
 import ThemedComp from "./components/ThemedComp";
 import React from "react";
+import AnimationSpinner from "./components/AnimationSpinner";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(true);
@@ -20,7 +21,14 @@ function App() {
 
   return (
     <ThemeProvider theme={lightTheme ? LightTheme : DarkTheme}>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <GlobalStyles />
         <BasicTitle>Basic</BasicTitle>
         <BasicTitle special>Special</BasicTitle>
@@ -36,11 +44,13 @@ function App() {
         <ExtendingReactComponent title="Extending and utils constants" />
         <h2 className="title">Making a card</h2>
         <Card />
+        <ThemedComp light={lightTheme} />
+        <button className="btn" onClick={switchThemeHandler}>
+          Switch Theme
+        </button>
+        <h2 style={{ textAlign: "center" }}>Animations: Spinner</h2>
+        <AnimationSpinner />
       </div>
-      <ThemedComp light={lightTheme} />
-      <button className="btn" onClick={switchThemeHandler}>
-        Switch Theme
-      </button>
     </ThemeProvider>
   );
 }

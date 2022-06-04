@@ -27,7 +27,7 @@ const Wrapper = styled(ExtendingReactComponent)`
 
   .box {
     margin: 1rem auto;
-    width: 40%;
+    width: 70%;
     text-align: center;
     padding: 3px;
     height: 2rem;
