@@ -15,6 +15,7 @@ import React from "react";
 import AnimationSpinner from "./components/AnimationSpinner";
 import Form from "./components/Form";
 import List from "./components/List";
+import ComplexList from "./components/ComplexList";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(true);
@@ -81,6 +82,8 @@ function App() {
         <Form />
         <h2>Simple list example</h2>
         <List />
+        <h2>Complex list example</h2>
+        <ComplexList />
       </div>
     </ThemeProvider>
   );
