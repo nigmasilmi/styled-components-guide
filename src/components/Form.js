@@ -16,14 +16,29 @@ const Button = styled.button.attrs((props) => {
     return (
       type === "submit" &&
       css`
-        background: red;
+        background: #ff00e1;
+        color: black;
         display: block;
         width: 100%;
         margin: 1rem auto;
-        border-radius: 0%.25rem;
+        border-radius: 0.25rem;
       `
     );
   }}
+`;
+
+const BasicInput = styled.input.attrs((props) => {
+  return {
+    type: props.type ? props.type : "text",
+    placeholder: props.placeholder || "Please enter a value",
+  };
+})`
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #e1dede;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
 `;
 
 const Form = () => {
@@ -38,7 +53,11 @@ const Form = () => {
           margin-top: 1rem;
         `}
       >
-        <input type="text" />
+        <BasicInput type="text" placeholder="your name" />
+        <BasicInput type="email" placeholder="your email" />
+        <BasicInput type="password" placeholder="your password" />
+        <BasicInput type="text" />
+
         <Button type="submit">Submit here</Button>
       </form>
     </div>
