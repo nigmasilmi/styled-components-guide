@@ -1,7 +1,7 @@
 import BasicTitle from "./components/BasicTitle";
 import { DefaultButton, HipsterButton } from "./components/Buttons";
 import MUIButtonExtended from "./components/MUIButtonExtended";
-
+import ComplexTitle from "./components/ComplexTitle";
 function App() {
   return (
     <div>
@@ -14,6 +14,8 @@ function App() {
       <div style={{ textAlign: "center" }}>
         <MUIButtonExtended />
       </div>
+      <h2 style={{ textAlign: "center" }}>More complex implementations</h2>
+      <ComplexTitle title={"i am wrapped"} />
     </div>
   );
 }
