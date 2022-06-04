@@ -12,6 +12,18 @@ const Button = styled.button.attrs((props) => {
   font-size: 1rem;
   cursor: pointer;
   border-top-right-radius: 0.75rem;
+  ${({ type }) => {
+    return (
+      type === "submit" &&
+      css`
+        background: red;
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+        border-radius: 0%.25rem;
+      `
+    );
+  }}
 `;
 
 const Form = () => {
