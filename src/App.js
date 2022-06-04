@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import BasicTitle from "./components/BasicTitle";
+import { DefaultButton, HipsterButton } from "./components/Buttons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BasicTitle>Basic</BasicTitle>
+      <BasicTitle special>Special</BasicTitle>
+      <BasicTitle destruct>Destruct</BasicTitle>
+      <BasicTitle vary>Ternary</BasicTitle>
+      <HipsterButton>HipsterButton</HipsterButton>
+      <DefaultButton className="btn">Click me</DefaultButton>
     </div>
   );
 }
