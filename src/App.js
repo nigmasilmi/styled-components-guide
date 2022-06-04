@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styled from "styled-components/macro";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./global-styles";
 import { LightTheme, DarkTheme } from "./theme";
@@ -54,6 +55,22 @@ function App() {
         <HipsterButton as="a" href="https://google.com">
           I am a link
         </HipsterButton>
+        <h2>macro css</h2>
+        <div
+          css={`
+            color: green;
+          `}
+        >
+          <h3>hello world</h3>
+          <BasicTitle
+            vary
+            css={`
+              color: aqua;
+            `}
+          >
+            Style Component with macro
+          </BasicTitle>
+        </div>
       </div>
     </ThemeProvider>
   );
